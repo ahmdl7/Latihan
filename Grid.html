@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Gallery</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: azure;
+            text-align: center;
+            margin: 50px auto;
+        }
+        img{
+            width: 100%;
+            display: block;
+        }
+        .items{
+            width: 80%;
+            margin: 20px auto;
+            border: 7px solid white;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 5px;
+            justify-items: center;
+        }
+        li{
+            list-style-type: none;
+        }
+        .con{
+            width: 70%;
+            margin: 10% auto;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+        <h2>My Gallery</h2>
+            <ul class="items">
+                <li><img src="img.jpg" alt=""/></li>
+                <li><img src="img.jpg" alt=""/></li>
+                <li><img src="img.jpg" alt=""/></li>
+                <li><img src="img.jpg" alt=""/></li>
+                <li><img src="img.jpg" alt=""/></li>
+                <li><img src="img.jpg" alt=""/></li>
+                <li><img src="img.jpg" alt=""/></li>
+                <li><img src="img.jpg" alt=""/></li>
+                <li><img src="img.jpg" alt=""/></li>
+                <li><img src="img.jpg" alt=""/></li>
+            </ul>
+        
+            <br>
+            <div class="con">
+            <img src="img.jpg" alt=""/>
+            </div>
+</body>
+</html>
